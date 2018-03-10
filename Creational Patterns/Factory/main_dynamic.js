@@ -1,5 +1,5 @@
-var Task = require('./task_objectPrototype');
-var repoFactory = require('./repo_factory_cachedDynamic');
+var Task = require('../Constructor/task_objectPrototype');
+var repoFactory = require('./repo_moduleFactory_cachedDynamic');
 
 var task1 = new Task(repoFactory.task.get(1));
 var task2 = new Task(repoFactory.task.get(2));

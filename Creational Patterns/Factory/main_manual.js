@@ -1,6 +1,5 @@
-var Task = require('./task_objectPrototype');
-var repoFactory = require('./repo_factory_cachedManual');
-
+var Task = require('../Constructor/task_objectPrototype');
+var repoFactory = require('./repo_moduleFactory_cachedManual');
 //console.log(repoFactory.getRepo('task').get(1));
 
 var task1 = new Task(repoFactory.getRepo('task').get(1));

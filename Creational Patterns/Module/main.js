@@ -1,4 +1,4 @@
-var Task = require('./task_objectPrototype');
+var Task = require('../Constructor/task_objectPrototype');
 var Repo = require('./repo_modulePattern');
 
 var task1 = new Task(Repo.get(1));
