@@ -1,5 +1,5 @@
-var Task = function(name) {
-    this.name = name;
+var Task = function(data) {
+    this.name = data.name;
     this.completed = false;
 }
 Task.prototype.complete = function(){

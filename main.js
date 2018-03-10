@@ -1,6 +1,8 @@
-var Task = require("./task");
+var Task = require("./task_class");
+var Repo = require("./repo_modulePattern");
 
-var task1 = new Task("Water the dog.");
+//console.log(Repo.get(1));
+var task1 = new Task(Repo.get(1));
 var task2 = new Task("Hang out the cat.");
 var task3 = new Task("Read the hamster.");
 var task4 = new Task("Study the tortoise.");
