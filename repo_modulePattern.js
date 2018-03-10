@@ -1,7 +1,7 @@
 ///// Illustrates the module pattern. Theoretically would handle database calls. \\\\\
 
 // Standard module pattern
-var repo = function () {
+var repo_standardModule = function () {
     var db = {}; // This is unaccessible from the outside
 
     return {
@@ -18,9 +18,10 @@ var repo = function () {
 }
 
 // Revealing module pattern
-var repo_rev = function () {
+var repo_revealedModule = function () {
 
     var db = {};
+
     var get = function(id) {
         console.log("Getting task from database: " + id);
         return {
@@ -37,4 +38,4 @@ var repo_rev = function () {
     }
 }
 
-module.exports = repo();
+module.exports = repo_revealedModule();
