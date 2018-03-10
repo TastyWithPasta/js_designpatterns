@@ -1,27 +1,13 @@
-var task = {};
-//var task = new Object();
-//var task = Object.create(Object.prototype);
+var Task = function(name) {
+    this.name = name;
+    this.completed = false;
+}
+Task.prototype.complete = function(){
+    console.log("Completing task: " + this.name);
+    this.completed = true;
+};
+Task.prototype.save = function() {
+    console.log("Saving task: " + this.name);
+};
 
-task.title = "My task";
-task.description = "My description";
-Object.defineProperty(task, "toString", {
-    value: function() {
-        return this.title + ' ' + this.description;
-    },
-    writable: false,
-    enumerable: false,
-    configurable: true
-});
-
-var urgentTask = Object.create(task);
-Object.defineProperty(urgentTask, "toString", {
-    value: function() {
-        return this.title + ' is urgent!';
-    },
-    writable: false,
-    enumerable: false,
-    configurable: true
-});
-
-console.log(task.toString());
-console.log(urgentTask.toString());
+module.exports = Task;
