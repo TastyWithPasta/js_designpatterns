@@ -6,7 +6,7 @@ var repo_singletonPattern_WithNode = function () {
     var get = function() {
         console.log("Getting task from database: ");
         return {
-            name: "Task retrieved from DB with index "
+            name: "Task retrieved from DB"
         }
     };
     var save = function() {
