@@ -30,7 +30,7 @@ var FlyweightFactory = function(){
         get: get,
         getCount: getCount
     }
-}()
+}();
 
 function TaskCollection() {
     var tasks = {};
